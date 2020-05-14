@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create an Account</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #537614;
+      line-height: 1.8;
+      font-family: "DM Mono", monospace;
+    }
+
+    #form {
+      background-color: white;
+      max-width: 400px;
+
+      border-radius: 10px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    #form h1,
+    p {
+      text-align: center;
+    }
+
+    .form-data label,
+    button {
+      display: block;
+      padding: 10px 0px;
+      text-align: center;
+    }
+
+    .form-data input {
+      width: 100%;
+      padding: 10px;
+      border: solid 1px #a2c563;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    button {
+      margin: 25px auto;
+      width: 75%;
+      background-color: #334f00;
+      color: white;
+      transition: ease;
+      transition-duration: 1s;
+    }
+    a {
+      text-decoration: none;
+      color: #334f00;
+      transition: ease;
+      transition-duration: 1s;
+    }
+
+    a:hover {
+      color: #a2c563;
+    }
+
+    button:hover {
+      background-color: #537614;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div id="form">
+        <h1>Sign up</h1>
+        <p>Join to enjoy our great savings!</p>
+
+        <div class="form-data">
+          <form action="#">
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              placeholder="John"
+            />
+
+            <label for="last-name">Last Name</label>
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              placeholder="Doe"
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="YourEmail@website.com"
+            />
+
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+
+            <label for="password-verify">Verify Password</label>
+            <input
+              type="password"
+              name="password-verify"
+              id="password-verify"
+              placeholder="Verify Password"
+            />
+            <button type="submit">Submit</button>
+          </form>
+
+          <p>Already have a profile? <a href="#">login here</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
